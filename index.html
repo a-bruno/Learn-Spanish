@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Entendo de Espanhol</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/jogo2Espanhol.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+        
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class='lme-container-j2'>
+            <img class='lmeBTN-instrucoes' src='img/btn-instr.png'>
+            
+            <!-- Popup informação -->
+            <div class="lmePopup-instrucoes">
+                <span>x</span>
+                <h3>Instrucciones</h3>
+                <div class="lmePopup-1">
+                    <img src="img/instrucciones/lmeIns_1.png">
+                    <p>Arrastre la foto de los escritores para sus respectivos países de origen.</p>
+                </div>
+                <div class="lmePopup-2">
+                    <img src="img/instrucciones/lmeIns_2.png">
+                    <p>Si está correcto. el color del pais quedará verde y usted tendrá acceso a las  informaciones sobre el escritor seleccionado.</p>
+                </div>
+                <div class="lmePopup-3">
+                    <img src="img/instrucciones/lmeIns_3.png">
+                    <p>Utilice este botón para navegar entre las diferentes regiones de América Latina.</p>
+                </div>
+            </div>
+            
+            <div class="lmeTitleRegion"></div>
+            <button class="lme-btncambiarRegion">Cambiar Región</button>
+            
+            <!-- Popup informações dos escritores -->
+            <div class="lmePopup-informacoesEsc">
+                <span>x</span>
+                <h3>[Nome do escritor]</h3>
+                <img class="lmeIMGPerfil" src="">
+                <div class="lmeInfQuadro">
+                    <div class="lmeInfQuadro-nacimiento">
+                        <strong>Nacimiento</strong>
+                        <p></p>
+                    </div>
+                    <hr />
+                    <div class="lmeInfQuadro-nacionalidade">
+                        <strong>Nacionalidade</strong>
+                        <p></p>
+                    </div>
+                    <hr />                  
+                    <div class="lmeInfQuadro-ocupacion">
+                        <strong>Ocupación</strong>
+                        <p></p>
+                    </div>
+                    <hr />
+                    <div class="lmeInfQuadro-genero">
+                        <strong>Género</strong>
+                        <p></p>
+                    </div>
+                    <hr />
+                    <div class="lmeInfQuadro-obras">
+                        <strong>Obras</strong>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paises América Central -->
+            <img class="lmePaises lmeMexico" src="img/paises/Mexico_Red.png">
+            <img class="lmePaises lmeGuatemala" src="img/paises/Guatemala_Green1.png">
+            <img class="lmePaises lmeCuba" src="img/paises/Cuba_Red.png">
+            <img class="lmePaises lmeColombia" src="img/paises/Colombia_Red.png">
+            
+            <!-- Paises América Del Sul -->
+            <img class="lmePaises lmeArgentina" src="img/paises/Argentina_Red.png">
+            <img class="lmePaises lmePeru" src="img/paises/Peru_Red.png">
+            <img class="lmePaises lmeChile" src="img/paises/Chile_Red.png">
+            <img class="lmePaises lmeUruguay" src="img/paises/Uruguay_Red.png">
+            
+            <!-- Objetos vázios -->
+            <div class="lme-drop lmeEsc-1"></div>
+            <div class="lme-drop lmeEsc-2"></div>
+            <div class="lme-drop lmeEsc-3"></div>
+            <div class="lme-drop lmeEsc-4"></div>
+            <div class="lme-drop lmeEsc-5"></div>
+            <div class="lme-drop lmeEsc-6"></div>
+            <div class="lme-drop lmeEsc-7"></div>
+            <div class="lme-drop lmeEsc-8"></div>
+            <div class="lme-drop lmeEsc-9"></div>
+            
+            <!-- Quadro de personalidades -->
+            <div class='lme-quadroEscritores'>
+                <img class="lmeEscritor lmeDrag8" src="img/escritores/Carlos_Fuentes.png" title="Carlos Fuentes">
+                <img class="lmeEscritor lmeDrag1" src="img/escritores/Rodrigo_Rey_Rosa.png" title="Rodrigo Rey Rosa"> 
+                <img class="lmeEscritor lmeDrag4" src="img/escritores/Gillermo_Gabrera.png" title="Gillermo Gabrera"> 
+                <img class="lmeEscritor lmeDrag3" src="img/escritores/Gabriel_Garcia.png" title="Gabriel Gracia"> 
+                <img class="lmeEscritor lmeDrag6" src="img/escritores/Pablo_Neruda.png" title="Pablo Neruda"> 
+                <img class="lmeEscritor lmeDrag2" src="img/escritores/Eduardo_Galeano.png" title="Eduardo Galeano"> 
+                <img class="lmeEscritor lmeDrag5" src="img/escritores/Jorge_Luis_Borges.png" title="Jorge Luis">
+                <img class="lmeEscritor lmeDrag9" src="img/escritores/Vargas_Losa.png" title="Vargas Losa">     
+                <img class="lmeEscritor lmeDrag7" src="img/escritores/Rivera_Litelier.png" title="Rivera Litelier"> 
+            </div>
+        </div>
+    </body>
+</html>

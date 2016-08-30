@@ -1,0 +1,280 @@
+.lme-container-j2 {
+    width: 600px;
+    height: 450px;
+    position: relative;
+    border: 1px dashed black;
+    background: url(../img/mapa.png);
+    background-position: 8% 3%;
+    font-family: 'Roboto', sans-serif;
+    
+    -webkit-transition: background-position 0.6s linear;
+    -moz-transition: background-position 0.6s linear;
+    
+}
+
+.lme-container-j2-2 {
+    background-position: 80% 72%;
+}
+
+.lme-quadroEscritores {
+    height: 62px;
+    position: absolute;
+    margin-top: 385px;
+    margin-left: 0px;
+    /*border: 1px dashed black;*/
+}
+
+.lme-quadroEscritores img {
+    cursor: move;
+}
+
+/* Botão para abrir modal de informação. */
+.lmeBTN-instrucoes {
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    margin: 5px 0 0 5px;
+}
+
+/* Paises */
+.lmePaises {
+    position: absolute;
+}
+
+.lmeMexico {
+    margin: 3px 0 0 85px;
+}
+
+.lmeCuba {
+    margin: 106px 0 0 385px;
+}
+
+.lmeGuatemala {
+    margin: 165px 0 0 165px;
+}
+
+.lmeColombia {
+    margin: 200px 0 0 417px;
+}
+
+.lmeArgentina {
+    margin: 155px 0 0 249px;
+}
+
+.lmePeru {
+    margin-left: 72px;
+}
+
+.lmeChile {
+    margin: 107px 0 0 91px;
+}
+
+.lmeUruguay {
+    margin: 178px 0 0 367px;    
+}
+
+/* CSS dos Elementos vázios DROP */
+.lme-drop {
+    width: 61px;
+    height: 60px;
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 50%;    
+}
+
+.lmeEsc-1 {
+    margin: 147px 0 0 97px;
+}
+
+.lmeEsc-2 {
+    margin: 128px 0 0 504px;
+}
+
+.lmeEsc-3 {
+    margin: 241px 0 0 201px;
+}
+
+.lmeEsc-4 {
+    margin: 224px 0 0 503px;
+}
+
+.lmeEsc-5 {
+    margin: 49px 0 0 72px;
+}
+
+.lmeEsc-6 {
+    margin: 168px 0 0 92px;
+}
+
+.lmeEsc-7 {
+    margin: 267px 0 0 92px;
+}
+
+.lmeEsc-8 {
+    margin: 300px 0 0 462px;
+}
+
+.lmeEsc-9 {
+    margin: 200px 0 0 497px;
+}
+
+/* CSS Popup - */
+.lmePopup-instrucoes {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    border: 4px solid #d4d9dc;
+    background: #ecf0f1;
+    z-index: 10;
+    margin: 45px 0 0 68px;
+    display: none;
+}
+
+.lmePopup-instrucoes span {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+    display: inline;
+    float: right;
+    margin: 5px 5px 0 0;
+    background: #ccc;
+    cursor: pointer;
+    color: black;
+}
+
+.lmePopup-instrucoes h3 {
+    text-align: center;
+}
+
+.lmePopup-instrucoes div {
+    width: 130px;
+    height: 200px;
+    margin-left: 10px;
+    background: #d1dcf0;
+}
+
+.lmePopup-instrucoes .lmePopup-1 {
+    margin-left: 20px;
+}
+
+.lmePopup-instrucoes .lmePopup-2 {
+    margin-left: 160px;
+    margin-top: -200px;
+}
+
+.lmePopup-instrucoes .lmePopup-2 p {
+    font-size: 11px;
+}
+
+.lmePopup-instrucoes .lmePopup-3 {
+    margin-left: 300px;
+    margin-top: -200px;
+}
+
+.lmePopup-instrucoes div img {
+    position: absolute;
+}
+
+.lmePopup-1 img {
+    margin: 5px 0 0 15px;
+}
+
+.lmePopup-2 img{
+    margin: 5px 0 0 25px;
+}
+
+.lmePopup-3 img{
+    margin: 30px 0 0 4.5px;
+}
+
+.lmePopup-instrucoes p {
+    width: inherit;
+    position: absolute;
+    font-size: 13px;
+    text-align: center;
+    top: 160px;
+}
+
+/* Popup - informações sobre os autores */
+.lmePopup-informacoesEsc {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid #d4d9dc;
+    background: #ecf0f1;
+    z-index: 10;
+    margin: 45px 0 0 68px;
+    display: none;
+    /*display: none;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.lmePopup-informacoesEsc h3 {
+    text-align: center;
+}
+
+.lmePopup-informacoesEsc span {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+    font-size: 10px;
+    margin: 5px 5px 0 0;
+    text-align: center;
+    float: right;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.lmePopup-informacoesEsc .lmeIMGPerfil {
+    width: 104px;
+    height: 104px;
+    margin: 3px 0 0 30px;
+}
+
+.lmePopup-informacoesEsc .lmeInfQuadro {
+    width: 270px;
+    height: 200px;
+    /*border: 1px solid #ccc;*/
+    margin: -108px 0 0 145px;
+}
+
+hr {
+    margin-top: 5px;
+    background: black;
+}
+
+.lmePopup-informacoesEsc p {
+    width: 165px;
+    margin: -15px 0 0 100px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* Botão Cambiar */
+.lme-btncambiarRegion {
+    position: absolute;
+    border: none;
+    border-radius: 8px;
+    background: #3f5289;
+    color: white;
+    padding: 5px;
+    left: 460px;
+    top: 55px;
+    cursor: pointer;
+}
+
+.lmeTitleRegion {
+    position: absolute;
+    z-index: 0;
+    width: 250px;
+    height: 40px;
+    left: 300px;
+    top: 20px;
+    background-image: url(../img/lmeRegion_1.png);
+}
