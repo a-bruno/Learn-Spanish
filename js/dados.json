@@ -1,0 +1,27 @@
+{
+	
+	"escritores": {
+
+		"rodrigo rey": {
+			"none" : "Rodrigo Rey Rosa", 
+			"nacimento" : "4 de noviembre de 19958 Ciudad de Guatemala Guatemala",
+            "nacionalidade" : "Guatemalteca", 
+            "ocupacao" : "Escritor",
+            "genero" : "Novela, cuento", 
+            "obras relevantes" : "El material humano Los sordos",
+            "url imagem" : "img/escritores/f-quadradas-d-RodrigoR.png"
+		},
+
+		"gillermo cabrera": {
+			"nome": "Gillermo Cabrera",
+			"nacimento" : "22 de abril de 1929 Gibara, Cuba",
+			"nacionalidade" : "Cubano",
+			"ocupacao" : "Lingüista, guionista, traductor, ensayista y escritor",
+			"genero" : "Novela, cuento, ensayo",
+			"obras relevantes" : "Tres tristes tigres (novela) La Habana para un Infante Difunto (novela)",
+			"url imagem" : "img/escritores/f-quadradas-d-GillermoC.png"
+		}
+
+	}
+
+}
