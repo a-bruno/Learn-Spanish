@@ -1,0 +1,29 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.map-container {
+    background: url(../img/mapa.png);
+    background-position: 8% 3%;
+    border: 1px dashed black;
+    height: 450px;
+    position: relative;
+    width: 600px;
+}
+
+.map-lista-escritores {
+    bottom: 0;
+    display: flex;
+    position: absolute;
+}
+
+    .map-lista-author {
+        cursor: move;
+    }
+
