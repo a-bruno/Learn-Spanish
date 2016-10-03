@@ -3,7 +3,8 @@
   var Litamana = Litamana || {},
       COLLECTION = []; 
 
-  Litamana.Author = function(argName, argBirth, argNationaty, argOccupation, argGenre, argConstruction, argUrlImg, argUrlImg1) {
+  Litamana.Author = function(argName, argId, argBirth, argNationaty, argOccupation, argGenre, argConstruction, argUrlImg, argUrlImg1) {
+    this.id = argId;
     this.name = argName;
     this.birth = argBirth;
     this.nationality = argNationaty;
@@ -27,17 +28,16 @@
       $.getJSON( argUrl, function(data) {
         
         $.each( data['escritores'], function(key, value) {
-          COLLECTION.push(new Litamana.Author(key, value['nacimento'], value['nacionalidade'], value['ocupacao'], value['genero'], value['obras relevantes'], value['url imagem'], value['url imagem 1']));
+          COLLECTION.push(new Litamana.Author(key, value['id'], value['nacimento'], value['nacionalidade'], value['ocupacao'], value['genero'], value['obras relevantes'], value['url imagem'], value['url imagem 1']));
         });
 
         self.renderAvatarAuthor();
-      
       }); 
     }; 
 
     self.renderAvatarAuthor = function() {
       for(var i in COLLECTION) 
-        jQuery(self.elemContainer).find('.map-lista-escritores').append('<li class="map-lista-author"> <img src="'+ COLLECTION[i].url_img_1 +'" alt="Image of author '+ COLLECTION[i].name +'" /></li>');        
+        jQuery(self.elemContainer).find('.map-lista-escritores').append('<li id="'+ COLLECTION[i].id +'" class="map-lista-author"> <img src="'+ COLLECTION[i].url_img_1 +'" alt="Image of author '+ COLLECTION[i].name +'" /></li>');        
         self.authorDraggables(jQuery('.map-lista-author'));
     };
 
