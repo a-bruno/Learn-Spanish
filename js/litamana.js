@@ -1,6 +1,7 @@
 (function() {
 
-  var Litamana = Litamana || {}; 
+  var Litamana = Litamana || {},
+      COLLECTION = []; 
 
   Litamana.Author = function(argName, argBirth, argNationaty, argOccupation, argGenre, argConstruction, argUrlImg, argUrlImg1) {
     this.name = argName;
@@ -22,27 +23,26 @@
     };
 
     var CollectionRender = function(argUrl) {
-      var aux = [];
 
       $.getJSON( argUrl, function(data) {
         
         $.each( data['escritores'], function(key, value) {
-          aux.push(new Litamana.Author(key, value['nacimento'], value['nacionalidade'], value['ocupacao'], value['genero'], value['obras relevantes'], value['url imagem'], value['url imagem 1']));
+          COLLECTION.push(new Litamana.Author(key, value['nacimento'], value['nacionalidade'], value['ocupacao'], value['genero'], value['obras relevantes'], value['url imagem'], value['url imagem 1']));
         });
 
-        self.renderAvatarAuthor(aux);
+        self.renderAvatarAuthor();
       
       }); 
     }; 
 
-    self.renderAvatarAuthor = function(COLLECTION)  {
+    self.renderAvatarAuthor = function() {
       for(var i in COLLECTION) 
         jQuery(self.elemContainer).find('.map-lista-escritores').append('<li class="map-lista-author"> <img src="'+ COLLECTION[i].url_img_1 +'" alt="Image of author '+ COLLECTION[i].name +'" /></li>');        
         self.authorDraggables(jQuery('.map-lista-author'));
     };
 
     self.authorDraggables = function(argElem) {
-      argElem.draggable({ containment: ".map-container", scroll: false }); 
+      argElem.draggable({ containment: '.map-container', scroll: false }); 
     }
 
     self.init();
@@ -50,7 +50,5 @@
   };
 
   new Litamana.Main();
-
-
 
 })();
