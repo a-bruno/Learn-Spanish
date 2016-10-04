@@ -39,10 +39,24 @@
       for(var i in COLLECTION) 
         jQuery(self.elemContainer).find('.map-lista-escritores').append('<li id="'+ COLLECTION[i].id +'" class="map-lista-author"> <img src="'+ COLLECTION[i].url_img_1 +'" alt="Image of author '+ COLLECTION[i].name +'" /></li>');        
         self.authorDraggables(jQuery('.map-lista-author'));
+        self.observerClickAuthor(jQuery('.map-lista-author'));
     };
 
     self.authorDraggables = function(argElem) {
       argElem.draggable({ containment: '.map-container', scroll: false }); 
+    }
+
+    self.observerClickAuthor = function(argElem) {
+        argElem.click(function() {
+          self.renderInformationAuthors(jQuery(this).attr('id'));
+        });
+    }
+
+    self.renderInformationAuthors = function(argIdAuthor) {
+        jQuery('.map-popup--instrucoes').html(
+          '<h1>'+COLLECTION[argIdAuthor].name+'</h1>'+
+          '<img src="'+COLLECTION[argIdAuthor].url_img+'" alt="" />'
+        ).show();
     }
 
     self.init();
