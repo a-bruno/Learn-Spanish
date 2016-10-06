@@ -2,7 +2,7 @@
 
   var Litamana = Litamana || {},
       COLLECTION = []; 
-
+      
   Litamana.Author = function(argName, argId, argBirth, argNationaty, argOccupation, argGenre, argConstruction, argUrlImg, argUrlImg1) {
     this.id = argId;
     this.name = argName;
