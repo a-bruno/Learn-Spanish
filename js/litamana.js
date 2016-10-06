@@ -54,6 +54,7 @@
 
     self.renderInformationAuthors = function(argIdAuthor) {
         jQuery('.map-popup--instrucoes').html(
+          '<span class="btn-fechar">x</span>'+
           '<h1>'+COLLECTION[argIdAuthor].name+'</h1>'+
           '<img src="'+COLLECTION[argIdAuthor].url_img+'" alt="" />'
         ).show();
