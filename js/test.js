@@ -1,8 +1,24 @@
 var Litamana = Litamana || {},
 	_COLLECTION = [];
 
-Litamana.EntityMaminipulation = {
+Litamana.Data = {
 
+	getJSONES: function() {
+		jQuery.ajax({
+			url: arguments[0],
+			async: false,
+			dataType: 'JSON',
+			method: 'POST',
+			statusCode: {
+				404: function(){
+					alert('File not found!');
+				}
+			}
+		})
+		.done(function(data){
+			
+		});
+	},
 	getJSON: function(strUrl, strKeyParent, strKeyChild) {
 
 		if(!strUrl) {
@@ -29,7 +45,7 @@ Litamana.EntityMaminipulation = {
 								+'" alt="Image of author '+ key +'" /></li>'
 							);
 					} else if(strKeyChild == key) {
-						alert(true);
+						
 					}
 
 				});
@@ -37,29 +53,47 @@ Litamana.EntityMaminipulation = {
 		}
 
 	},
+	teste: function() {
+		console.log(this.getJSONES('js/concepts.json'));
+	}
 
 };
 
-Litamana.Views = function() {
+Litamana.Actions = function() {
 	this.init.apply(this, arguments);
 }
 
-Litamana.Views.prototype = {
+Litamana.Actions.prototype = {
 	init: function() {
 		this.BASE_URL = 'js/concepts.json',
 		this.POINTER_PARENT = 'escritores';
-	},
 
+		this.getAllHtmlWriters();
+	},
 	getAllHtmlWriters: function() {
 		this.getJSON(this.BASE_URL, this.POINTER_PARENT);
 		jQuery('.map-lista-author').draggable({ containment: '.map-container', scroll: false });
 	},
+	observeClickAuthor: function(argObj) {
+		this.teste();
+	}
 }
 
-jQuery.extend(Litamana.Views.prototype, Litamana.EntityMaminipulation);
+jQuery.extend(Litamana.Actions.prototype, Litamana.Data);
 
 jQuery(document).ready(function() {
-	new Litamana.Views().getAllHtmlWriters();
+	var view = new Litamana.Actions();
+	var author = jQuery('.map-lista-escritores');
 
-	
+	author.click(function() { 
+		view.observeClickAuthor(jQuery(this));
+	});	
 });
+
+
+
+
+
+
+
+
