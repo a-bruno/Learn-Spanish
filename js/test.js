@@ -1,25 +1,23 @@
 var Litamana = Litamana || {},
-	_COLLECTION = [];
+	COLLECTION = [];
+
+var createWriters = function(id, nome, nas, nac, ocup, gen, obr, img1, img2) {
+	return {
+		id: id,
+		nome: nome,
+		nascimento: nas,
+		nacionalidade: nac,
+		ocupacao: ocup,
+		genero: gen,
+		obras: obr,
+		img1: img1,
+		img2: img2,
+	}
+}
 
 Litamana.Data = {
 
-	getJSONES: function() {
-		jQuery.ajax({
-			url: arguments[0],
-			async: false,
-			dataType: 'JSON',
-			method: 'POST',
-			statusCode: {
-				404: function(){
-					alert('File not found!');
-				}
-			}
-		})
-		.done(function(data){
-			
-		});
-	},
-	getJSON: function(strUrl, strKeyParent, strKeyChild) {
+	getDataBinds: function(strUrl, strKeyParent) {
 
 		if(!strUrl) {
 			return false;
@@ -37,25 +35,12 @@ Litamana.Data = {
 			})
 			.done(function(data) {
 				jQuery.each(data[strKeyParent], function(key, value){
-					if(!strKeyChild) {
-						jQuery('.map-lista-escritores')
-							.append(
-								'<li id="'+ value['id'] 
-								+'" class="map-lista-author"> <img src="'+ value['url imagem 1'] 
-								+'" alt="Image of author '+ key +'" /></li>'
-							);
-					} else if(strKeyChild == key) {
-						
-					}
-
-				});
+					return COLLECTION.push(value['id'], key, value['nascimento'], value['nacionalidade'], value['ocupacao'], value['genero'], value['obras relevantes'], value['url imagem'], value['url imagem 1']);
+				});	
 			});
 		}
 
 	},
-	teste: function() {
-		console.log(this.getJSONES('js/concepts.json'));
-	}
 
 };
 
@@ -71,23 +56,28 @@ Litamana.Actions.prototype = {
 		this.getAllHtmlWriters();
 	},
 	getAllHtmlWriters: function() {
-		this.getJSON(this.BASE_URL, this.POINTER_PARENT);
+		this.getDataBinds(this.BASE_URL, this.POINTER_PARENT);
+
+		console.log(COLLECTION);
+
+		COLLECTION.forEach(function(elem) {
+			console.log(elem);
+		});
+
 		jQuery('.map-lista-author').draggable({ containment: '.map-container', scroll: false });
 	},
-	observeClickAuthor: function(argObj) {
-		this.teste();
+	observeClickAuthor: function(argElem) {
+		this.getDataBinds(this.BASE_URL, this.POINTER_PARENT, argElem.attr('id'));
 	}
 }
 
 jQuery.extend(Litamana.Actions.prototype, Litamana.Data);
 
 jQuery(document).ready(function() {
-	var view = new Litamana.Actions();
-	var author = jQuery('.map-lista-escritores');
+	var actions = new Litamana.Actions();
+	var authors = jQuery('.map-lista-escritores');
 
-	author.click(function() { 
-		view.observeClickAuthor(jQuery(this));
-	});	
+
 });
 
 

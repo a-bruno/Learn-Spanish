@@ -4,7 +4,7 @@
 
 		"Rodrigo Rey Rosa": {
 			"id": "0",
-			"nacimento" : "4 de noviembre de 19958 Ciudad de Guatemala Guatemala",
+			"nascimento" : "4 de noviembre de 19958 Ciudad de Guatemala Guatemala",
 			"nacionalidade" : "Guatemalteca", 
 			"ocupacao" : "Escritor",
 			"genero" : "Novela, cuento", 
@@ -15,7 +15,7 @@
 
 		"Gillermo Cabrera": {
 			"id": "1",
-			"nacimento" : "22 de abril de 1929 Gibara, Cuba",
+			"nascimento" : "22 de abril de 1929 Gibara, Cuba",
 			"nacionalidade" : "Cubano",
 			"ocupacao" : "Lingüista, guionista, traductor, ensayista y escritor",
 			"genero" : "Novela, cuento, ensayo",
@@ -26,7 +26,7 @@
 
 		"Jorge Mario Pedro Vargas Llosa": {
 			"id": "2",
-			"nacimento" : "28 de marzo de 1936  Bandera del Perú Arequipa, Perú",
+			"nascimento" : "28 de marzo de 1936  Bandera del Perú Arequipa, Perú",
 			"nacionalidade" : "Cubano",
 			"ocupacao" : "Lingüista, guionista, traductor, ensayista y escritor",
 			"genero" : "Novela, cuento, ensayo",
@@ -37,7 +37,7 @@
 
 		"Hernán Rivera Letelier": {
 			"id": "3",
-			"nacimento" : "11 de julio de 1950 Talca, Chile",
+			"nascimento" : "11 de julio de 1950 Talca, Chile",
 			"nacionalidade" : "Chilena",
 			"ocupacao" : "Escritor",
 			"genero" : "Novela, poesía y cuento",
@@ -48,7 +48,7 @@
 
 		"Jorge Luis Borges": {
 			"id": "4",
-			"nacimento" : "24 de agosto de 1899 Buenos Aires, Argentina",
+			"nascimento" : "24 de agosto de 1899 Buenos Aires, Argentina",
 			"nacionalidade" : "Argentina",
 			"ocupacao" : "Escritor, poeta, ensayista, traductor, crítico literario, bibliotecario",
 			"genero" : "Cuento, ensayo, poesía",
@@ -59,7 +59,7 @@
 
 		"Gabriel Garcia Marquez": {
 			"id": "5",
-			"nacimento" : "6 de marzo de 1927 Aracataca, Colombia",
+			"nascimento" : "6 de marzo de 1927 Aracataca, Colombia",
 			"nacionalidade" : "Colombiana",
 			"ocupacao" : "Escritor, periodista, editor, guionista",
 			"genero" : "Novela, cuento, crónica, reportaje",
@@ -70,7 +70,7 @@
 
 		"Ricardo Eliécer Neftalí Reyes Basoalto": {
 			"id": "6",
-			"nacimento" : "12 de julio de 1904,Parral, Chile",
+			"nascimento" : "12 de julio de 1904,Parral, Chile",
 			"nacionalidade" : "Chilena",
 			"ocupacao" : "Poeta,Escritor,Diplomático,Político",
 			"genero" : "Poesía",
@@ -81,7 +81,7 @@
 
 		"Eduardo Germán María Hughes Galeano": {
 			"id": "7",
-			"nacimento" : "3 de septiembre de 1940, Montevideo, Uruguay",
+			"nascimento" : "3 de septiembre de 1940, Montevideo, Uruguay",
 			"nacionalidade" : "Uruguaya",
 			"ocupacao" : "Escritor, periodista",
 			"genero" : "?",
